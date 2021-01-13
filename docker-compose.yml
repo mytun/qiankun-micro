@@ -1,0 +1,7 @@
+web:
+  image: nginx
+  volumes:
+    - ./conf.d:/etc/nginx/conf.d
+    - ./dist:/usr/share/nginx/html
+  ports:
+    - "8080:80"
